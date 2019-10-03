@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta name ="viewport" content="width=device-width",initial-scale=1>
+            <link rel=stylesheet href="jquery.mobile-1.4.5.css"/>
+            <script src="jquery.js"></script>
+            <script src="jquery.mobile-1.4.5.js"></script>
+        </head>
+
+
+        <body>
+                <div data-role=tabs id=tab1>
+                    <div data-role=navbar>
+                        <ul>
+                            <li>
+                                <a href=#tab1 data-ajax="false">data1</a>
+                            </li>
+                            <li>
+                                <a href=#tab2 data-ajax="false">data2</a>
+                            </li>
+                            <li>
+                                <a href=#tab3 data-ajax="false">data3</a>
+                            </li>
+                            <li>
+                                <a href=#tab4 data-ajax="false">data4</a>
+                            </li> 
+                        </ul>
+
+                    </div>
+
+
+                    <div id=tab1 class="ui-body-d ui-content">
+                            <h1>profile pribadi</h1>
+                            <div data-role="content">
+                                    <input type="text" data-role="date" data-inline="true">
+                            </div>
+
+                            <form>
+                                <label for="slider-1">grades:</label>
+                                <input type range name="slider-1" id="slider-1" min="0" max="10" value="5">
+                            </form>
+                        </div>
+            
+            
+                        <div id=tab2 class="ui-body-d ui-content">
+                            <p>selamat datang di  tab 2</p>
+                        </div>
+            
+            
+                        <div id=tab3 class="ui-body-d ui-content">
+                            <p>ini tab3</p>
+                            <a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">
+                                pop
+                            </a>
+
+                            <div data-role="popup" id="popupBasic">
+                                <p>halooo!! ini percobaan popup</p>
+                            </div>
+                        </div>
+            
+                        <div id=tab4 class="ui-body-d ui-content">
+                            <p>tab4</p>
+                                <ol data-role="listview">
+                                    <li>tab1</li>
+                                    <li>tab2</li>
+                                    <li>tab3</li>
+                                    <li>tab4</li>
+                                </ol>
+                        </div>
+                </div>
+
+            
+        </body>
+    </html>
